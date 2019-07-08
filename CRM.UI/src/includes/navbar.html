@@ -1,0 +1,67 @@
+<div class="modal fade" id="signOutModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signOutModalLabel">Выход из системы</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Вы уверены, что хотите выйти из аккаунта?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-dark fixed-top bg-violet flex-nowrap shadow p-0">
+  <div class="container-fluid">
+    <button type="button" class="btn btn-sidebar d-none d-block d-sm-block d-md-none" data-toggle="sidebar">
+      <span class="navbar-toggler-icon"></span>
+      <!--<i class="fas fa-bars"></i>-->
+    </button>
+    <a class="navbar-brand" href="#">CRM</a>
+
+    <ul class="nav navbar-right navbar-top-links">
+      <li class="nav-item dropdown" hidden>
+        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="badge badge-pill badge-danger">2</span>
+          <i class="fa fa-bell"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right notify p-0" role="menu">
+          <li class="dropdown-item">
+            <div class="icon-notify">
+              <i class="fa fa-users sm"></i>
+            </div>
+            <div class="info-notify">
+              <h6>Новая заявка</h6>
+              <p>
+                <i class="far fa-clock"></i> 14:05 05.04.2019
+              </p>
+            </div>
+
+          </li>
+
+          <li class="dropdown-item">
+            <div class="icon-notify">
+              <i class="fa fa-users sm"></i>
+            </div>
+            <div class="info-notify">
+              <h6>Новая заявка</h6>
+              <p>
+                <i class="far fa-clock"></i> 14:05 05.04.2019
+              </p>
+            </div>
+          </li>
+          <li class="footer"><a href="#">Все уведомления</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" data-toggle="modal" data-target="#signOutModal">Выйти</a>
+      </li>
+    </ul>
+  </div>
+</nav>

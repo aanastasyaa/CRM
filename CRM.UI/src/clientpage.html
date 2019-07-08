@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRM-system</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<%= require('./includes/navbar.html') %>
+<div class="container-fluid">
+    <div class="row app-content mb-2">
+        <%= require('./includes/sidebar.html') %>
+
+        <div class="col-sm-12 main">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="flex-grow-1">Страница клиента</h2>
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-sm-12  d-flex justify-content-md-end justify-content-center ">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-info" id="deletebtn">Удалить клиента</button>
+                        <!--<button type="button" class="btn btn-sm btn-info">Сохранить изменения</button>-->
+                        <a role="button" href="clients.html" class="btn btn-sm btn-info">Назад</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-lg-2 p-0 text-center">
+                    <div class="user-photo mb-2">
+                        <img src="" class="rounded-circle" alt="user" id="clientAvatar">
+                    </div>
+                    <div class="uploadAvatar">
+                            <input type="file" name="file" id="uploadFile" class="input-file" style="display: none;" accept=".png, .jpg, .jpeg">
+                            <button type="button" class="btn btn-sm btn-info mb-2" onclick="document.getElementById('uploadFile').click();">Изменить фото</button>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-10">
+                    <form id="clientInfo">
+                        <div class="form-group">
+                            <label for="clientSurname">Фамилия</label>
+                            <input type="text" class="form-control" id="clientSurname" name="clientSurname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientName">Имя</label>
+                            <input type="text" class="form-control" id="clientName"  name="clientName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientOtch">Отчество</label>
+                            <input type="text" class="form-control" id="clientOtch"  name="clientOtch" >
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="clientEmail">Email</label>
+                                <input type="text" class="form-control" id="clientEmail" name="clientEmail" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="clientPhone">Телефон</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">+7</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="clientPhone" name="clientPhone" placeholder="(___)-___-__-__" required data-toggle="tooltip" data-placement="top" title="Введите телефон в формате (XXX)-XXX-XX-XX">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-check mx-1">
+                            <input class="form-check-input" type="radio" id="isPersonRadio" name="formradio" value="person" checked>
+                            <label class="form-check-label" for="isPersonRadio">Физическое лицо</label>
+                        </div>
+                        <div class="form-check mx-1">
+                            <input class="form-check-input" type="radio" id="isCompanyRadio" value="company" name="formradio">
+                            <label class="form-check-label" for="isCompanyRadio">Юридическое лицо</label>
+                        </div>
+                        </div>
+                        <div class="form-row mt-2" id="inputForCompany" >
+                            <div class="form-group col-sm-6">
+                                <label for="clientCompanyName">Компания</label>
+                                <input type="text" class="form-control" id="clientCompanyName" name="clientCompanyName">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="personPosition">Должность</label>
+                                <input type="text" class="form-control" id="personPosition"  name="personPosition">
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <input class="btn btn-info mt-4 col-sm-4" type="submit" id="savebtn" value="Сохранить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<div class="sidebar-light sidebar bg-violet"> <!--d-none d-md-block - показывать только при md и lg -->
+    <div class="sidebar-sticky">
+        <div class="avatar flex-column">
+            <div class="media p-2 py-5">
+                <img src="./img/girl.png" class="mr-3 rounded-circle " alt="user">
+                <div class="media-body">
+                    <h5 class="mt-0">Менеджер</h5>
+                    Ксения Уварова
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav flex-column nav-pills pt-2">
+            <li class="nav-item" id="mainpage">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-home"></i>
+                    Главная
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="requests.html">
+                    <i class="fas fa-file"></i>
+                    Заявки
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#clientsubmenu" data-toggle="collapse" aria-expanded="false" id="btnclients">
+                    <i class="fas fa-users"></i>
+                    Клиенты
+                </a>
+                <div class="collapse clientsubmenu" id="clientsubmenu">
+                <ul class="nav flex-column nav-pills pt-1 pl-4">
+                    <li class="nav-item" id="fizSubmenu">
+                        <a class="nav-link" href="clients.html#list-fiz">Физические лица</a>
+                    </li>
+                    <li class="nav-item" id="compSubmenu">
+                        <a class="nav-link" href="clients.html#list-companies">Юридические лица</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li class="nav-item" hidden>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-bell"></i>
+                    Уведомления
+                </a>
+            </li>
+            <li class="nav-item" hidden>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-tasks"></i>
+                    Задачи
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

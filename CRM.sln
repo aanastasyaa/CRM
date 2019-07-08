@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.WebAPI", "CRM.WebAPI\CRM.WebAPI.csproj", "{D0F44497-765F-44B3-B3C5-5C78E117CDF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.UI", "CRM.UI\CRM.UI.csproj", "{AB2333F6-1A24-45A1-A78F-61BF209900BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0F44497-765F-44B3-B3C5-5C78E117CDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F44497-765F-44B3-B3C5-5C78E117CDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F44497-765F-44B3-B3C5-5C78E117CDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F44497-765F-44B3-B3C5-5C78E117CDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2333F6-1A24-45A1-A78F-61BF209900BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2333F6-1A24-45A1-A78F-61BF209900BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2333F6-1A24-45A1-A78F-61BF209900BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2333F6-1A24-45A1-A78F-61BF209900BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1861FDB7-E7FF-4853-BC9F-50AC23B84D63}
+	EndGlobalSection
+EndGlobal
